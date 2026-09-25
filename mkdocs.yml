@@ -1,7 +1,7 @@
-site_name: CORDEX Experiment Design
-site_url: https://wcrp-cordex.github.io/experiment-design
-repo_url: https://github.com/WCRP-CORDEX/experiment-design
-repo_name: WCRP-CORDEX/experiment-design
+site_name: CORDEX Guidance
+site_url: https://wcrp-cordex.github.io/cordex-guidance
+repo_url: https://github.com/WCRP-CORDEX/cordex-guidance
+repo_name: WCRP-CORDEX/cordex-guidance
 
 theme:
   name: material
