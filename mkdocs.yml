@@ -82,7 +82,12 @@ extra_css:
   - assets/stylesheets/custom.css
 
 nav:
+  - Experiment design: experiment-design.md
+  - Archiving specifications: archive-specifications.md
+  - Data request: data-request.md
+  - Simulation status: simulation-status.md
   - CORDEX data citation service: CORDEX-CMIP6-citation.md
+
 
 use_directory_urls: true
 strict: false

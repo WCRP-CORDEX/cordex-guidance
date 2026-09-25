@@ -1,10 +1,9 @@
 # CORDEX data citation service
 
-!!! danger
-    This page in under construction
+!!! danger "This page in under construction"
 
-
-CMIP7 data citations will be created automatically in response to data publication on ESGF.
+CORDEX data citations will be created automatically in response to data publication on ESGF.
+Data citations can be explored at [https://cmip7-citations.ceda.ac.uk](https://cmip7-citations.ceda.ac.uk).
 ...
 
 
