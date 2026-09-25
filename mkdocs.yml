@@ -82,7 +82,7 @@ extra_css:
   - assets/stylesheets/custom.css
 
 nav:
-  - CORDEX data citation service: docs/CORDEX-CMIP6-citation.md
+  - CORDEX data citation service: CORDEX-CMIP6-citation.md
 
 use_directory_urls: true
 strict: false
