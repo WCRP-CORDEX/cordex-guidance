@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# MkDocs build artifacts
+site/
+site/**
+
+# mkdocs-exporter / PDF outputs
+*.pdf
+site/*.pdf
+site/pdf/
+
+# Caches & tooling
+.cache/
+.mkdocs/
+.pytest_cache/
+.mypy_cache/
+
+# IDEs & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+```// filepath: /home/chus/proyectos/2_ONGOING/2025_CORDEX_SAT/TF_CORDEX_CMIP7/experiment-design/.gitignore
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# MkDocs build artifacts
+site/
+site/**
+
+# mkdocs-exporter / PDF outputs
+*.pdf
+site/*.pdf
+site/pdf/
+
+# Caches & tooling
+.cache/
+.mkdocs/
+.pytest_cache/
+.mypy_cache/
+
+# IDEs & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
