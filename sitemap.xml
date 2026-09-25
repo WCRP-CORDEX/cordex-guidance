@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://wcrp-cordex.github.io/cordex-guidance/</loc>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://wcrp-cordex.github.io/cordex-guidance/CORDEX-CMIP6-citation/</loc>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://wcrp-cordex.github.io/cordex-guidance/archive-specifications/</loc>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://wcrp-cordex.github.io/cordex-guidance/data-request/</loc>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://wcrp-cordex.github.io/cordex-guidance/experiment-design/</loc>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://wcrp-cordex.github.io/cordex-guidance/simulation-status/</loc>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+</urlset>
