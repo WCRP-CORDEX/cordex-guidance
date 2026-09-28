@@ -49,8 +49,8 @@ CORDEX defines a series of [domains](https://cordex.org/domains/cordex-domain-de
 ## Data-sharing
 Sharing of the data among CORDEX participants it is at the core of the initiative. In order to achieve that, CORDEX establishes 2 main protocols: list of variables and standardization.
 
-### List of variables
-A list of required variables is provided. These variables are grouped in different priorities: Core, Tier1, Tier2. Each group contains a different variables and/or frequencies at which the variable has to be provided. The main objective is to provide enough data to maximize the usability of the produced data without overwhelming the institutions that produce the data.
+### Data request
+A list of required variables is provided known as _Data Request_. These variables are grouped in different priorities: Core, Tier1, Tier2. Each group contains a different variables and/or frequencies at which the variable has to be provided. The main objective is to provide enough data to maximize the usability of the produced data without overwhelming the institutions that produce the data. They depend on the design experiment see the [CORDEX-CMIP6](https://wcrp-cordex.github.io/data-request-table/dreq_default.html) as the last available one.
  
 ### Standardization
 Any data to be incorporated into CORDEX has to follow a series of rules in order to guarantee the interoperability of data-sets produced from different institutions, models and domains. These rules are based (but not limited) on the [CF-conventions](https://cfconventions.org/).
