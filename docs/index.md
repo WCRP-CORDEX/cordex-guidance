@@ -45,3 +45,18 @@ CORDEX aims to accommodate any numerical tool or methodology designed to provide
 
 ### CORDEX domain
 CORDEX defines a series of [domains](https://cordex.org/domains/cordex-domain-description/). These domains provide the minimal spatial extent in which any experiment has to contribute with data.
+
+## Data-sharing
+Sharing of the data among CORDEX participants it is at the core of the initiative. In order to achieve that, CORDEX establishes 2 main protocols: list of variables and standardization.
+
+### List of variables
+A list of required variables is provided. These variables are grouped in different priorities: Core, Tier1, Tier2. Each group contains a different variables and/or frequencies at which the variable has to be provided. The main objective is to provide enough data to maximize the usability of the produced data without overwhelming the institutions that produce the data.
+ 
+### Standardization
+Any data to be incorporated into CORDEX has to follow a series of rules in order to guarantee the interoperability of data-sets produced from different institutions, models and domains. These rules are based (but not limited) on the [CF-conventions](https://cfconventions.org/).
+
+### ESGF
+Since the possibility to upload CORDEX data into ESGF nodes, a new series of protocols and standards have to be followed. ESGF introduces a series of _'Data Reference Syntax'_ (DRS), _'Controlled Vocabulary'_ (CV) among others. These elements consists in a series of tables used by the ESGF nodes to directly consult which data is available.
+
+These ESGF-derived standardization encompasses all the metadata of any file archived in the ESGF. From the register of institutions, models, activities to the variable itself. All this register infrastructure is controlled via GIT repository and managed by researchers designated by CORDEX SAT.
+
