@@ -58,5 +58,5 @@ Any data to be incorporated into CORDEX has to follow a series of rules in order
 ### ESGF
 Since the possibility to upload CORDEX data into ESGF nodes, a new series of protocols and standards have to be followed. ESGF introduces a series of _'Data Reference Syntax'_ (DRS), _'Controlled Vocabulary'_ (CV) among others. These elements consists in a series of tables used by the ESGF nodes to directly consult which data is available.
 
-These ESGF-derived standardization encompasses all the metadata of any file archived in the ESGF. From the register of institutions, models, activities to the variable itself. All this register infrastructure is controlled via GIT repository and managed by researchers designated by CORDEX SAT.
+These ESGF-derived standardization encompasses all the metadata of any file archived in the ESGF. From the register of institutions, models, activities to the name of the archive itself. All this register infrastructure is controlled via GIT repository and managed by researchers designated by CORDEX SAT.
 
