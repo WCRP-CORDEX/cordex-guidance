@@ -85,7 +85,7 @@ They depend on the design experiment see the [CORDEX-CMIP6](https://wcrp-cordex.
  
 ### Standardization
 Any data to be incorporated into CORDEX has to follow a series of rules in order to guarantee the interoperability of data-sets produced from different institutions, models and domains. 
-These rules are based (but not limited) on the [CF-conventions](https://cfconventions.org/).
+These rules are based (but not limited) on the [CF-conventions](https://cfconventions.org/) and can be found in this [protocol](url) with a process called _CMORization_.
 
 ### ESGF
 Since the possibility to upload CORDEX data into ESGF nodes, a new series of protocols and standards have to be followed. 
