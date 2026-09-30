@@ -49,7 +49,7 @@ A CORDEX experiment requires the selection of a **forcing** (data provided for a
 |:------------:|:------------ |:------------:|:------------:|
 | evaluation | Simulation under controlled forcing to understand systematic model errors | re-analysis | current climate |
 | historical | Simulation using a forcing from an external source | CMIP | current climate |
-| future | Simulation using same forcing as 'historical' | CMIP | future climate |
+| future | Simulation using same forcing source as 'historical' | CMIP | future climate |
 
 In consultancy with the entire community, SAT provides an experiment protocol to be followed. There are different versions of the protocol which inherit the state-of-the-art at each certain period mostly related to the _'Coupled Model Intercomparison Project'_ [CMIP](https://www.wcrp-cmip.org/) cycle at the moment of its inception. Therefore it can be found:
 - CORDEX CMIP5 protocol: [RCM](https://cordex.org/experiment-guidelines/cordex-cmip5/experiment-protocol-cordex-cmip5-rcms/), [ESD](https://cordex.org/experiment-guidelines/cordex-cmip5/experiment-protocol-cordex-cmip5-esd/)
