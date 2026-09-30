@@ -60,3 +60,8 @@ Since the possibility to upload CORDEX data into ESGF nodes, a new series of pro
 
 These ESGF-derived standardization encompasses all the metadata of any file archived in the ESGF. From the register of institutions, models, activities to the name of the archive itself. All this register infrastructure is controlled via GIT repository and managed by researchers designated by CORDEX SAT.
 
+#### Checking before uploading
+Before data can be upload 2 steps are necessary:
+- [ncrepack-coredex](https://github.com/WCRP-CORDEX/ncrepack-cordex): tool to repack the data inside the files in order to facilitate downloading and analysis
+- [esgf-qa](https://github.com/ESGF/esgf-qa): tool to check ESGF compilance of the data
+
