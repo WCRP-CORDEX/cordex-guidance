@@ -57,7 +57,8 @@ In consultancy with the entire community, SAT provides an experiment protocol to
 - CORDEX CMIP7-AFT protocol (under elaboration)
 - CORDEX CMIP7 protocol (under elaboration)
 
-Fine scale details in how to configure modeling tools over an specific CORDEX domain are not imposed, but a coordination with the respective POC is recommended.
+Fine scale details in how to configure modeling tools over an specific CORDEX domain are not imposed, but a coordination with the respective POC is recommended. 
+Also is recommended to perform some sensitivity tests of the _most suited_ configuration of the model at the given domain before performing the long simulations.
 
 ### Modeling tool
 CORDEX aims to accommodate any numerical tool or methodology designed to provide a scientifically-based numerical representation of the climate system. 
@@ -112,6 +113,7 @@ For file names, the DRS elements are joined by underscores and organized in the 
 ```
 
 Each entry has different sources. A full description can be found in this output specifications [OutputFile](url)
+
 - `<activity>`: activity of the experiment (by now only `DYN`: dynamic downscaling, `ESD`: Empirical­-Statistical Downscaling)
 - `<product>`:
 - `<Domain>`: one of the declared domains from this [CV-domains](url)
