@@ -105,9 +105,22 @@ The CORDEX DRS path follows the directory structure:
                   <Frequency>/
                     <VariableName>
 ```
-For file names, the DRS elements are joined by underscores and organized in the following order:
-
-VariableName_Domain_GCMModelName_CMIP5ExperimentName_CMIP5EnsembleMember_RCMModelName_RCMVersionID_Frequency[_StartTime-EndTime].nc 
+For file names, the DRS elements are joined by underscores and organized in the following order (example from CMIP5):
+```
+<VariableName>_<Domain>_<GCMModelName>_<CMIP5ExperimentName>_<CMIP5EnsembleMember>_<RCMModelName_RCMVersionID<_<Frequency>[_StartTime-EndTime].nc 
+```
+Each entry has different sources
+- `<activity>`: activity of the experiment (by now only `DYN`: dynamic downscaling, `ESD`: Empirical­-Statistical Downscaling)
+- `<product>`:
+- `<Domain>`: one of the declared domains from this [CV-domains](url)
+- `<Institution>`: one of the declared institutions from this [CV-institutions](url). **NOTE**: contact your POC in case your institution is not listed
+- `<GCMModelName>`: one of the declared CMIP GCMs from this [CV-GCMS](url) used as forcing
+- `<CMIP5ExperimentName>`: one of the declared CMIP experiments of the GCM from this [CV-ExpName](url) used as forcing
+- `<CMIP5EnsembleMember>`: one of the declared CMIP members of the runs of the GCM from this [CV-GCMEns](url)
+- `<RCMModelName>`: one of the declared RCMs from this [CV-RCMs](url). **NOTE**: contact your POC in case your RCM is not listed
+- `<RCMVersionID>`: one of the declared versions of the RCM from this [CV-RCMversion](url). **NOTE**: contact your POC in case your RCM is not listed
+- `<Frequency>`: one of the declared output freqeuncies from this [CV-Frequency](url)
+- `<VariableName>`: one of the declared name of variables from this [CV-variables](url)
 
 #### Checking before uploading
 Before data can be upload 2 steps are necessary:
