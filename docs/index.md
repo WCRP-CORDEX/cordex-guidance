@@ -44,8 +44,9 @@ CORDEX defines 2 main categories:
 
 This models are applied over a given CORDEX domain over a given period of time. 
 A CORDEX experiment requires the selection of a **forcing** (data provided for an external source) a given **period** of time over which the downscaling will be produced. In general the experiment is based in 3 main simulations:
+
 | Name     | Description | Forcing (example) | Period |
-| ---      | ---       | ---       | ---       |
+|:------------:|:------------ |:------------:|:------------:|
 | evaluation | Simulation under controlled forcing to understand systematic model errors | re-analysis | current climate |
 | historical | Simulation using a forcing from an external source | CMIP | current climate |
 | future | Simulation using same forcing as 'historical' | CMIP | future climate |
@@ -91,7 +92,7 @@ These ESGF-derived standardization encompasses all the metadata of any file arch
 All this register infrastructure is controlled via GIT repository and managed by researchers designated by CORDEX SAT.
 
 The CORDEX DRS path follows the directory structure:
-
+```
 <activity>/
   <product>/
     <Domain>/
@@ -103,7 +104,7 @@ The CORDEX DRS path follows the directory structure:
                 <RCMVersionID>/
                   <Frequency>/
                     <VariableName>
-
+```
 For file names, the DRS elements are joined by underscores and organized in the following order:
 
 VariableName_Domain_GCMModelName_CMIP5ExperimentName_CMIP5EnsembleMember_RCMModelName_RCMVersionID_Frequency[_StartTime-EndTime].nc 
