@@ -5,7 +5,7 @@ authors:
     - Lluis Fita
     - CORDEX TTPI 
 date: 2026-09-30
-some_url: https://cordex.org/cordex-guidance
+some_url: https://wcrp-cordex.github.io/cordex-guidance/
 ---
 # CORDEX guidance documents
 
