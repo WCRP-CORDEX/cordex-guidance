@@ -1,31 +1,49 @@
+---
+title: index.md
+summary: central guidance to contribute to CORDEX
+authors:
+    - Lluis Fita
+    - CORDEX TTPI 
+date: 2026-09-30
+some_url: https://cordex.org/cordex-guidance
+---
 # CORDEX guidance documents
 
 ** UNDER CONSTRUCTION **
 
-This site provides guidance documents for CORDEX modellers and data users. The main objective is to orient any institution willing to contribute to CORDEX with a new experiment.
+This site provides guidance documents for CORDEX modellers and data users. 
+The main objective is to orient any institution willing to contribute to CORDEX with a new experiment.
 
-The main goal of a CORDEX experiment is to perform a downscaling of climate information in a coordinate manner with other research entities. In order to achieve that CORDEX provides an experimental framework designed to provide reliable climate information over an specific area through the collaboration among multiple researchers. Aiming to provide a landscape where data can be shared to facilitate hydroclimatic research, studies on impacts and policymaking.
+The main goal of a CORDEX experiment is to perform a downscaling of climate information in a coordinate manner with other research entities. 
+In order to achieve that CORDEX provides an experimental framework designed to provide reliable climate information over an specific area through the collaboration among multiple researchers. 
+Aiming to provide a landscape where data can be shared to facilitate hydroclimatic research, studies on impacts and policymaking.
 
 A CORDEX experiment basically encompasses the following steps:
 1. Execution of a numerical downscaling experiment inside a CORDEX domain
 2. Archive output data following standardization protocol
 3. Share the data to the community
 
-Due to the coordination goal at the core of the CORDEX experiment, multiple documentations and guides are required in order to ensure the correct understanding among the multiple actors involved covering all the aspects of the experiment. This 'guidance' aims to providing a central unique point of access to all this documentation either for new contributions or experienced ones by giving access to the latest versions of each document. 
+Due to the coordination goal at the core of the CORDEX experiment, multiple documentations and guides are required in order to ensure the correct understanding among the multiple actors involved covering all the aspects of the experiment. 
+This _'guidance'_ aims to providing a central unique point of access to all this documentation either for new contributions or experienced ones by giving access to the latest versions of each document. 
 
-In recent years, CORDEX related data has been made accessible throughout the _'Earth System Grid Federation'_ ([ESGF](https://www.climateurope.eu/esgf-earth-system-grid-federation/)). In order to achieve that, CORDEX data has to follow precise ESGF standards which are trying to mimic the CMIP standard.
+In recent years, CORDEX related data has been made accessible throughout the _'Earth System Grid Federation'_ ([ESGF](https://www.climateurope.eu/esgf-earth-system-grid-federation/)). 
+In order to achieve that, CORDEX data has to follow precise ESGF standards which are trying to mimic the CMIP standard.
 
 ## Before the experiment
 CORDEX has a _'Science Advisory Team'_ ([SAT](https://cordex.org/about/science-adv-team/)) which coordinates the experiment. 
 
-CORDEX defined a series of domains which cover the entire land masses. For each land mass, there are representatives of CORDEX known as _'Points of Contact'_ ([POC](https://cordex.org/about/points-of-contact/)). Is highly recommended to contact the local POC in order to insert any new experiment within the on-going activities in the specific domain.
+CORDEX defined a series of domains which cover the entire land masses. 
+For each land mass, there are representatives of CORDEX known as _'Points of Contact'_ ([POC](https://cordex.org/about/points-of-contact/)). 
+Is highly recommended to contact the local POC in order to insert any new experiment within the on-going activities in the specific domain.
 
 ## Design of the experiment
-Any CORDEX experiment will use in its core a modeling tool which should follow a given scientific methodology. CORDEX defines 2 main categories:
+Any CORDEX experiment will use in its core a modeling tool which should follow a given scientific methodology. 
+CORDEX defines 2 main categories:
 - _Regional Climate Model (RCM)_: models that solve the physical equations and relationships among climate variables
 - _Empirical­-Statistical Downscaling (ESD)_: models based on mathematical or statistical relationships among climate variables
 
-This models are applied over a given CORDEX domain over a given period of time. A CORDEX experiment requires the selection of a **forcing** (data provided for an external source) a given **period** of time over which the downscaling will be produced. In general the experiment is based in 3 main simulations:
+This models are applied over a given CORDEX domain over a given period of time. 
+A CORDEX experiment requires the selection of a **forcing** (data provided for an external source) a given **period** of time over which the downscaling will be produced. In general the experiment is based in 3 main simulations:
 | Name     | Description | Forcing (example) | Period |
 | ---      | ---       | ---       | ---       |
 | evaluation | Simulation under controlled forcing to understand systematic model errors | re-analysis | current climate |
@@ -41,24 +59,54 @@ In consultancy with the entire community, SAT provides an experiment protocol to
 Fine scale details in how to configure modeling tools over an specific CORDEX domain are not imposed, but a coordination with the respective POC is recommended.
 
 ### Modeling tool
-CORDEX aims to accommodate any numerical tool or methodology designed to provide a scientifically-based numerical representation of the climate system. Since climate modeling science is a continuously evolving topic, new concepts tend to arise. CORDEX aims to incorporate also the new ones aiming to enrich the lines of evidence for study of the climate and the potential uses of the produced data.
+CORDEX aims to accommodate any numerical tool or methodology designed to provide a scientifically-based numerical representation of the climate system. 
+Since climate modeling science is a continuously evolving topic, new concepts tend to arise. 
+CORDEX aims to incorporate also the new ones aiming to enrich the lines of evidence for study of the climate and the potential uses of the produced data.
 
 ### CORDEX domain
-CORDEX defines a series of [domains](https://cordex.org/domains/cordex-domain-description/). These domains provide the minimal spatial extent in which any experiment has to contribute with data.
+CORDEX defines a series of [domains](https://cordex.org/domains/cordex-domain-description/). 
+These domains provide the minimal spatial extent in which any experiment has to contribute with data.
 
 ## Data-sharing
-Sharing of the data among CORDEX participants it is at the core of the initiative. In order to achieve that, CORDEX establishes 2 main protocols: list of variables and standardization.
+Sharing of the data among CORDEX participants it is at the core of the initiative. 
+In order to achieve that, CORDEX establishes 2 main protocols: list of variables and standardization.
 
 ### Data request
-A list of required variables is provided known as _Data Request_. These variables are grouped in different priorities: Core, Tier1, Tier2. Each group contains a different variables and/or frequencies at which the variable has to be provided. The main objective is to provide enough data to maximize the usability of the produced data without overwhelming the institutions that produce the data. They depend on the design experiment see the [CORDEX-CMIP6](https://wcrp-cordex.github.io/data-request-table/dreq_default.html) as the last available one.
+A list of required variables is provided known as _Data Request_. 
+These variables are grouped in different priorities: Core, Tier1, Tier2. 
+Each group contains a different variables and/or frequencies at which the variable has to be provided. 
+The main objective is to provide enough data to maximize the usability of the produced data without overwhelming the institutions that produce the data. 
+They depend on the design experiment see the [CORDEX-CMIP6](https://wcrp-cordex.github.io/data-request-table/dreq_default.html) as the last available one.
  
 ### Standardization
-Any data to be incorporated into CORDEX has to follow a series of rules in order to guarantee the interoperability of data-sets produced from different institutions, models and domains. These rules are based (but not limited) on the [CF-conventions](https://cfconventions.org/).
+Any data to be incorporated into CORDEX has to follow a series of rules in order to guarantee the interoperability of data-sets produced from different institutions, models and domains. 
+These rules are based (but not limited) on the [CF-conventions](https://cfconventions.org/).
 
 ### ESGF
-Since the possibility to upload CORDEX data into ESGF nodes, a new series of protocols and standards have to be followed. ESGF introduces a series of _'Data Reference Syntax'_ (DRS), _'Controlled Vocabulary'_ (CV) among others. These elements consists in a series of tables used by the ESGF nodes to directly consult which data is available.
+Since the possibility to upload CORDEX data into ESGF nodes, a new series of protocols and standards have to be followed. 
+ESGF introduces a series of _'Data Reference Syntax'_ (DRS), _'Controlled Vocabulary'_ (CV) among others. 
+These elements consists in a series of tables used by the ESGF nodes to directly consult which data is available.
 
-These ESGF-derived standardization encompasses all the metadata of any file archived in the ESGF. From the register of institutions, models, activities to the name of the archive itself. All this register infrastructure is controlled via GIT repository and managed by researchers designated by CORDEX SAT.
+These ESGF-derived standardization encompasses all the metadata of any file archived in the ESGF. From the register of institutions, models, activities to the name of the archive itself. 
+All this register infrastructure is controlled via GIT repository and managed by researchers designated by CORDEX SAT.
+
+The CORDEX DRS path follows the directory structure:
+
+<activity>/
+  <product>/
+    <Domain>/
+      <Institution>/
+        <GCMModelName>/
+          <CMIP5ExperimentName>/
+            <CMIP5EnsembleMember>/
+              <RCMModelName>/
+                <RCMVersionID>/
+                  <Frequency>/
+                    <VariableName>
+
+For file names, the DRS elements are joined by underscores and organized in the following order:
+
+VariableName_Domain_GCMModelName_CMIP5ExperimentName_CMIP5EnsembleMember_RCMModelName_RCMVersionID_Frequency[_StartTime-EndTime].nc 
 
 #### Checking before uploading
 Before data can be upload 2 steps are necessary:
