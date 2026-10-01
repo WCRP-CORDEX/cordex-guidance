@@ -82,6 +82,7 @@ extra_css:
   - assets/stylesheets/custom.css
 
 nav:
+  - CORDEX in a nutshell: cordex-in-a-nutshell.md
   - Experiment design: experiment-design.md
   - Archiving specifications: archive-specifications.md
   - Data request: data-request.md
