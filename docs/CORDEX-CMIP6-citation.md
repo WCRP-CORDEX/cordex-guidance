@@ -71,6 +71,12 @@ Aerosol: Fixed
 
 The CRCM5-SN is developed by the ESCER Centre at UQAM (Université du Québec à Montréal) with the collaboration of Environment and Climate Change Canada (ECCC), based on GEM 3.3.3.1 from ECCC.
 
+CORDEX is a [World Climate Research Programme (WCRP)](https://www.wcrp-climate.org/) initiative that advances the science and application of regional climate downscaling by coordinating experiments across fourteen continental domains and fostering related strategic activities and partnerships.
+It provides regional climate projections (driven by CMIP projections) to support the understanding of recent and future regional climate change.
+CORDEX contributes to the [Regional Information for Society (RIfS)](https://www.wcrp-rifs.org/) Core Project.
+Users of CORDEX data should be familiar with the [CORDEX Terms of Use](https://cordex.org/data-access/cordex-cmip6-data/cordex-cmip6-terms-of-use/).
+A list of institutions contributing to CORDEX is available [here](https://wcrp-cordex.github.io/cordex-cmip6-cv/CORDEX-CMIP6_institution_id.html?length=100).
+
 This record was created via the CEDA Citation Service, maintained and hosted on the CEDA JASMIN Infrastructure.
 ```
 
