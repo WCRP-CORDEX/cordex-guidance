@@ -30,8 +30,8 @@ To make datasets interoperable and searchable, contributors follow the conventio
 
 ## Before the experiment
 CORDEX's _Science Advisory Team_ ([SAT](https://cordex.org/about/science-adv-team/)) provides scientific guidance and develops experiment protocols with the community.
-CORDEX has defined regional domains spanning land areas around the world.
-_Points of Contact_ ([POCs](https://cordex.org/about/points-of-contact/)) represent CORDEX in the regions covered by these domains.
+CORDEX is organized around regional domains, each linking a defined geographic area with a community of researchers and institutions working in that region.
+_Points of Contact_ ([POCs](https://cordex.org/about/points-of-contact/)) connect these regional communities with CORDEX-wide activities.
 Before starting a contribution, contact the relevant POC to discuss regional priorities, ongoing activities, and how your work can align with them.
 
 ## Design of the experiment
@@ -65,13 +65,10 @@ A community task is developing a skill-based assessment of GCMs for each CORDEX 
 The CORDEX-CMIP7 activity is planned in two phases: an initial phase using the first available CMIP7 forcing data through CMIP7-AFT, followed by a phase using standard CMIP7 data.
 The CMIP7-AFT data are intended to support preparation for the IPCC Seventh Assessment Report (AR7).
 
-### Modeling tool
-CORDEX aims to accommodate scientifically sound tools and methods for representing regional climate, including approaches that emerge as the field develops.
-Using different methods can provide complementary evidence about climate processes and possible future changes.
-
 ### CORDEX domain
-CORDEX defines a set of [domains](https://cordex.org/domains/cordex-domain-description/) that provide a shared geographic framework for regional simulations.
-The experiment protocol and data requirements specify the spatial coverage expected for a contribution to each domain.
+A CORDEX [domain](https://cordex.org/domains/cordex-domain-description/) is both a defined geographic area for regional climate simulations and a community of researchers and institutions working in that region.
+As a key organizational structure within CORDEX, each domain provides a focus for regional collaboration, discussion of priorities, and coordination of contributions.
+The domain description sets out its geographic boundaries, while the relevant experiment protocol and data requirements specify the spatial coverage expected for simulations.
 
 ## Data-sharing
 Sharing data among CORDEX participants is central to the initiative.
