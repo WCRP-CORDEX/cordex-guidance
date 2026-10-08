@@ -10,7 +10,7 @@ This document only provides CORDEX-specific instructions for the modelling teams
 
 Citation entries are created automatically after data publication on ESGF.
 Author information is empty, with the primary author assigned to the _Citation Support_.
-At this point, representative from the modelling team can request reviewer access.
+At this point, a representative from the modelling team can request reviewer access.
 For this purpose, the **reviewer must have a GitHub account** and sign in as reviewer (at the top right corner of the [Citation service interface](https://cmip7-citations.ceda.ac.uk)).
 Then they can navigate to the entry they'd like to edit and click on **Request Reviewer Access** (at the bottom of any tab).
 In the dialogue, check the institutions for which you are requesting edit access.
@@ -29,7 +29,7 @@ Reviewer access can be granted to several people in the same institution and the
 ## Citation abstract template
 
 In the general information, citation entries show a default Abstract that can be edited.
-The default abstract in CMIP7 entries is automatically created created out of the Essential Model Documentation (EMD) information.
+The default abstract in CMIP7 entries is automatically created out of the Essential Model Documentation (EMD) information.
 In CORDEX, as there is no EMD for the time being, the abstract shows just some basic information retrieved from _esgvoc_ vocabularies. For example:
 
 ```

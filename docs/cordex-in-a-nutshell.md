@@ -11,92 +11,93 @@ some_url: https://wcrp-cordex.github.io/cordex-guidance/
 
 !!! danger "This page in under construction"
 
-This quick summary is intended as a guide for any institution willing to contribute to CORDEX with a new experiment.
+This page introduces the main steps and resources for institutions planning to contribute simulations to CORDEX.
 
-The main goal of a CORDEX experiment is to perform a downscaling of climate information in a coordinate manner with other research entities. 
-In order to achieve that CORDEX provides an experimental framework designed to provide reliable climate information over an specific area through the collaboration among multiple researchers. 
-Aiming to provide a landscape where data can be shared to facilitate hydroclimatic research, studies on impacts and policymaking.
+CORDEX is a community framework for coordinating regional climate downscaling across research groups and regions.
+Its shared protocols help make simulations comparable and their data easier to discover, access, and use in climate research, impact studies, and decision-making.
 
-A CORDEX experiment basically encompasses the following steps:
+A CORDEX contribution generally involves three steps:
 
-1. Execution of a numerical downscaling experiment inside a CORDEX domain
-2. Archive output data following standardization protocol
-3. Share the data to the community
+1. Run a downscaling simulation for a CORDEX domain, following the relevant experiment protocol.
+2. Prepare and archive the output according to the applicable data and metadata standards.
+3. Make the data available to the community, typically through the Earth System Grid Federation (ESGF).
 
-Due to the coordination goal at the core of the CORDEX experiment, multiple documentations and guides are required in order to ensure the correct understanding among the multiple actors involved covering all the aspects of the experiment. 
-This _'guidance'_ aims to providing a central unique point of access to all this documentation either for new contributions or experienced ones by giving access to the latest versions of each document. 
+CORDEX provides protocols and guidance for the different parts of this process, from experiment design to data publication.
+This site brings those resources together and points to their current versions for both new and experienced contributors.
 
-In recent years, CORDEX related data has been made accessible throughout the _'Earth System Grid Federation'_ ([ESGF](https://www.climateurope.eu/esgf-earth-system-grid-federation/)). 
-In order to achieve that, CORDEX data has to follow precise ESGF standards which are trying to mimic the CMIP standard.
+CORDEX data are published through the _Earth System Grid Federation_ ([ESGF](https://www.climateurope.eu/esgf-earth-system-grid-federation/)), a distributed system for publishing and discovering climate data.
+To make datasets interoperable and searchable, contributors follow the conventions and metadata requirements specified for the relevant CORDEX activity and experiment.
 
 ## Before the experiment
-CORDEX has a _'Science Advisory Team'_ ([SAT](https://cordex.org/about/science-adv-team/)) which coordinates the experiment. 
-
-CORDEX defined a series of domains which cover the entire land masses. 
-For each land mass, there are representatives of CORDEX known as _'Points of Contact'_ ([POC](https://cordex.org/about/points-of-contact/)). 
-Is highly recommended to contact the local POC in order to insert any new experiment within the on-going activities in the specific domain.
+CORDEX's _Science Advisory Team_ ([SAT](https://cordex.org/about/science-adv-team/)) provides scientific guidance and develops experiment protocols with the community.
+CORDEX has defined regional domains spanning land areas around the world.
+_Points of Contact_ ([POCs](https://cordex.org/about/points-of-contact/)) represent CORDEX in the regions covered by these domains.
+Before starting a contribution, contact the relevant POC to discuss regional priorities, ongoing activities, and how your work can align with them.
 
 ## Design of the experiment
-Any CORDEX experiment will use in its core a modeling tool which should follow a given scientific methodology. 
-CORDEX defines 2 main categories:
+CORDEX accommodates different methods for downscaling climate information.
+The two broad categories are:
 
-- _Regional Climate Model (RCM)_: models that solve the physical equations and relationships among climate variables
-- _Empirical­-Statistical Downscaling (ESD)_: models based on mathematical or statistical relationships among climate variables
+- _Regional climate models (RCMs)_: numerical models that represent physical processes and relationships among climate variables.
+- _Empirical-statistical downscaling (ESD)_: methods that use statistical relationships between large-scale climate information and local or regional climate variables.
 
-This models are applied over a given CORDEX domain over a given period of time. 
-A CORDEX experiment requires the selection of a **forcing** (data provided for an external source) a given **period** of time over which the downscaling will be produced. In general the experiment is based in 3 main simulations:
+Downscaling is performed for a defined CORDEX domain and period, using a specified source of **forcing data** (the large-scale climate information used to drive or inform the downscaling method).
+Depending on the experiment protocol, contributions commonly include simulations of the following types:
 
-| Name     | Description | Forcing (example) | Period |
+| Simulation | Description | Forcing (example) | Period |
 |:------------:|:------------ |:------------:|:------------:|
-| evaluation | Simulation under controlled forcing to understand systematic model errors | re-analysis | current climate |
-| historical | Simulation using a forcing from an external source | CMIP | current climate |
-| future | Simulation using same forcing source as 'historical' | CMIP | future climate |
+| Evaluation | Simulation used to assess model performance, commonly driven by reanalysis data | Reanalysis | Historical or present-day climate |
+| Historical | Simulation driven by a global climate model (GCM) simulation of past climate | CMIP historical experiment | Historical climate |
+| Future | Simulation driven by a GCM projection under a specified future scenario | CMIP scenario experiment | Future climate |
 
-In consultancy with the entire community, SAT provides an experiment protocol to be followed. There are different versions of the protocol which inherit the state-of-the-art at each certain period mostly related to the _'Coupled Model Intercomparison Project'_ [CMIP](https://www.wcrp-cmip.org/) cycle at the moment of its inception. Therefore it can be found:
+The SAT develops experiment protocols in consultation with the CORDEX community.
+Protocols evolve as climate science and the _Coupled Model Intercomparison Project_ ([CMIP](https://www.wcrp-cmip.org/)) advance, so the applicable requirements depend on the CORDEX activity and protocol you are contributing to.
+Available protocol versions include:
 
-- CORDEX CMIP5 protocol: [RCM](https://cordex.org/experiment-guidelines/cordex-cmip5/experiment-protocol-cordex-cmip5-rcms/), [ESD](https://cordex.org/experiment-guidelines/cordex-cmip5/experiment-protocol-cordex-cmip5-esd/)
-- CORDEX CMIP6 protocol: [RCM](https://zenodo.org/records/15268192)
-- CORDEX CMIP7-AFT protocol (under elaboration)
-- CORDEX CMIP7 protocol (under elaboration)
+- CORDEX-CMIP5 protocols: [RCMs](https://cordex.org/experiment-guidelines/cordex-cmip5/experiment-protocol-cordex-cmip5-rcms/) and [ESD](https://cordex.org/experiment-guidelines/cordex-cmip5/experiment-protocol-cordex-cmip5-esd/).
+- CORDEX-CMIP6 protocol for RCMs: [protocol](https://zenodo.org/records/15268192).
+- CORDEX-CMIP7-AFT protocol: under development.
+- CORDEX-CMIP7 protocol: under development.
 
-Fine scale details in how to configure modeling tools over an specific CORDEX domain are not imposed, but a coordination with the respective POC is recommended. 
-Also is recommended to perform some sensitivity tests of the _most suited_ configuration of the model at the given domain before performing the long simulations.
-A task is being carried out ([task](url)) in order to provide a skill-based list of GCMs for each CORDEX domain based in their representation of key reginoal climate features.
-It is planned to have 2-phase CORDEX CMIP7 exercise, one based in the first available CMIP7 GCMs provided as CMIP7-AFT (to be published for the IPCC AR7), and later on as standard CMIP7.
+The protocols do not prescribe every detail of model configuration for each domain, so discuss regional setup choices with the relevant POC.
+Before committing to long simulations, test the configuration selected for your model and domain, including its sensitivity to key choices where practical.
+A community task is developing a skill-based assessment of GCMs for each CORDEX domain, based on how well they represent key regional climate features ([task](url)).
+The CORDEX-CMIP7 activity is planned in two phases: an initial phase using the first available CMIP7 forcing data through CMIP7-AFT, followed by a phase using standard CMIP7 data.
+The CMIP7-AFT data are intended to support preparation for the IPCC Seventh Assessment Report (AR7).
 
 ### Modeling tool
-CORDEX aims to accommodate any numerical tool or methodology designed to provide a scientifically-based numerical representation of the climate system. 
-Since climate modeling science is a continuously evolving topic, new concepts tend to arise. 
-CORDEX aims to incorporate also the new ones aiming to enrich the lines of evidence for study of the climate and the potential uses of the produced data.
+CORDEX aims to accommodate scientifically sound tools and methods for representing regional climate, including approaches that emerge as the field develops.
+Using different methods can provide complementary evidence about climate processes and possible future changes.
 
 ### CORDEX domain
-CORDEX defines a series of [domains](https://cordex.org/domains/cordex-domain-description/). 
-These domains provide the minimal spatial extent in which any experiment has to contribute with data.
+CORDEX defines a set of [domains](https://cordex.org/domains/cordex-domain-description/) that provide a shared geographic framework for regional simulations.
+The experiment protocol and data requirements specify the spatial coverage expected for a contribution to each domain.
 
 ## Data-sharing
-Sharing of the data among CORDEX participants it is at the core of the initiative. 
-In order to achieve that, CORDEX establishes 2 main protocols: list of variables and standardization.
+Sharing data among CORDEX participants is central to the initiative.
+To support this, CORDEX specifies which variables to provide and how datasets should be formatted and described.
 
 ### Data request
-A list of required variables is provided known as _Data Request_. 
-These variables are grouped in different priorities: Core, Tier1, Tier2. 
-Each group contains a different variables and/or frequencies at which the variable has to be provided. 
-The main objective is to provide enough data to maximize the usability of the produced data without overwhelming the institutions that produce the data. 
-They depend on the design experiment see the [CORDEX-CMIP6](https://wcrp-cordex.github.io/data-request-table/dreq_default.html) as the last available one.
+A _Data Request_ lists the variables that contributors are asked to provide for an experiment.
+Variables are assigned priorities, such as Core, Tier 1, and Tier 2, which indicate the expected contribution level.
+The request also specifies details such as the required temporal frequency for each variable.
+This helps make the data useful to a wide range of users while keeping production demands manageable for contributing institutions.
+Data requests depend on the experiment; see the [CORDEX-CMIP6 Data Request](https://wcrp-cordex.github.io/data-request-table/dreq_default.html) for an example.
  
 ### Standardization
-Any data to be incorporated into CORDEX has to follow a series of rules in order to guarantee the interoperability of data-sets produced from different institutions, models and domains. 
-These rules are based (but not limited) on the [CF-conventions](https://cfconventions.org/) and can be found in this [protocol](url) with a process called _CMORization_.
+CORDEX data must follow common formatting and metadata rules so datasets from different institutions, models, and domains can be used together.
+These rules build on standards such as the [CF Conventions](https://cfconventions.org/) and are described in the relevant [output protocol](url).
+Preparing model output to meet a protocol's variable, metadata, and file-format requirements is commonly called _CMORization_.
 
 ### ESGF
-Since the possibility to upload CORDEX data into ESGF nodes, a new series of protocols and standards have to be followed. 
-ESGF introduces a series of _'Data Reference Syntax'_ (DRS), _'Controlled Vocabulary'_ (CV) among others. 
-These elements consists in a series of tables used by the ESGF nodes to directly consult which data is available.
+Publishing through ESGF also requires datasets to use the identifiers and metadata expected by the relevant CORDEX activity.
+These include a _Data Reference Syntax_ (DRS), which defines how datasets are organized and named, and _Controlled Vocabularies_ (CVs), which provide approved identifiers for items such as institutions, models, and experiments.
+ESGF uses this metadata to index datasets and help users find available data.
 
-These ESGF-derived standardization encompasses all the metadata of any file archived in the ESGF. From the register of institutions, models, activities to the name of the archive itself. 
-All this register infrastructure is controlled via GIT repository and managed by researchers designated by CORDEX SAT.
+The CORDEX vocabularies and related publication metadata are maintained in community repositories by designated maintainers.
+The directory and filename patterns below illustrate the CORDEX-CMIP5 DRS; use the current protocol and controlled vocabularies for the activity you are contributing to.
 
-The CORDEX DRS path follows the directory structure:
+In this CMIP5 example, the directory structure is:
 ```
 <activity>/
   <product>/
@@ -111,29 +112,31 @@ The CORDEX DRS path follows the directory structure:
                     <VariableName>
 ```
 
-For file names, the DRS elements are joined by underscores and organized in the following order (example from CMIP5):
+In this CMIP5 example, the filename combines DRS elements in the following order:
 ```
-<VariableName>_<Domain>_<GCMModelName>_<CMIP5ExperimentName>_<CMIP5EnsembleMember>_<RCMModelName_RCMVersionID<_<Frequency>[_StartTime-EndTime].nc 
+<VariableName>_<Domain>_<GCMModelName>_<CMIP5ExperimentName>_<CMIP5EnsembleMember>_<RCMModelName>_<RCMVersionID>_<Frequency>[_<StartTime>-<EndTime>].nc
 ```
 
-Each entry has different sources. A full description can be found in this output specifications [OutputFile](url)
+The values for each element come from the experiment definition, the relevant controlled vocabularies, or the simulation output.
+A full description is available in the [output specifications](url).
 
-- `<activity>`: activity of the experiment (by now only `DYN`: dynamic downscaling, `ESD`: Empirical­-Statistical Downscaling)
-- `<product>`:
-- `<Domain>`: one of the declared domains from this [CV-domains](url)
-- `<Institution>`: one of the declared institutions from this [CV-institutions](url). **NOTE**: contact your POC in case your institution is not listed
-- `<GCMModelName>`: one of the declared CMIP GCMs from this [CV-GCMS](url) used as forcing
-- `<CMIP5ExperimentName>`: one of the declared CMIP experiments of the GCM from this [CV-ExpName](url) used as forcing
-- `<CMIP5EnsembleMember>`: one of the declared CMIP members of the runs of the GCM from this [CV-GCMEns](url)
-- `<RCMModelName>`: one of the declared RCMs from this [CV-RCMs](url). **NOTE**: contact your POC in case your RCM is not listed
-- `<RCMVersionID>`: one of the declared versions of the RCM from this [CV-RCMversion](url). **NOTE**: contact your POC in case your RCM is not listed
-- `<Frequency>`: one of the declared output freqeuncies from this [CV-Frequency](url)
-- `<VariableName>`: one of the declared name of variables from this [CV-variables](url)
-- `[_StartTime-EndTime]`: format of the period covered by the file
+- `<activity>`: the CORDEX activity, such as `DYN` for dynamical downscaling or `ESD` for empirical-statistical downscaling.
+- `<product>`: the product category defined by the relevant activity's DRS.
+- `<Domain>`: the identifier of a declared CORDEX domain from the [domain vocabulary](url).
+- `<Institution>`: the identifier of a registered institution from the [institution vocabulary](url); contact your POC if your institution is not listed.
+- `<GCMModelName>`: the name of the CMIP GCM providing the forcing, selected from the [GCM vocabulary](url).
+- `<CMIP5ExperimentName>`: the name of the CMIP5 experiment providing the forcing, selected from the [experiment vocabulary](url).
+- `<CMIP5EnsembleMember>`: the identifier of the GCM ensemble member, selected from the [GCM ensemble vocabulary](url).
+- `<RCMModelName>`: the name of the regional climate model, selected from the [RCM vocabulary](url); contact your POC if your model is not listed.
+- `<RCMVersionID>`: the registered version of the regional climate model, selected from the [RCM version vocabulary](url); contact your POC if your model version is not listed.
+- `<Frequency>`: the output frequency, selected from the [frequency vocabulary](url).
+- `<VariableName>`: the variable identifier, selected from the [variable vocabulary](url).
+- `[_<StartTime>-<EndTime>]`: an optional date range indicating the period covered by the file.
 
 #### Checking before uploading
-Before data can be upload 2 steps are necessary:
+Before publication, run the checks required by the applicable protocol.
+For example, the following tools support preparation and validation of CORDEX data:
 
-- [ncrepack-coredex](https://github.com/WCRP-CORDEX/ncrepack-cordex): tool to repack the data inside the files in order to facilitate downloading and analysis
-- [esgf-qa](https://github.com/ESGF/esgf-qa): tool to check ESGF compilance of the data
+- [ncrepack-cordex](https://github.com/WCRP-CORDEX/ncrepack-cordex): repacks NetCDF files to facilitate downloading and analysis.
+- [esgf-qa](https://github.com/ESGF/esgf-qa): checks data against ESGF quality-assurance requirements.
 
