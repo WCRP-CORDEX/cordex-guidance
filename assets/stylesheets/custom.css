@@ -1,0 +1,32 @@
+/* Custom styles */
+:root {
+  --md-primary-fg-color: #2196f3;
+  --md-primary-fg-color--light: #64b5f6;
+  --md-primary-fg-color--dark: #1976d2;
+}
+
+/* Custom heading styles */
+.md-typeset h1 {
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+}
+
+/* Custom link colors */
+.md-content a {
+  color: var(--md-primary-fg-color);
+}
+
+.md-content a:hover {
+  color: var(--md-primary-fg-color--light);
+}
+
+/* Increase the logo size in the navbar */
+.md-header__button.md-logo {
+    margin: 0;
+    padding: 0;
+}
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    height: 3rem;
+    width: auto;
+}

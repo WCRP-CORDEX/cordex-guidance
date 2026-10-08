@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://wcrp-cordex.github.io/cordex-guidance/cordex-in-a-nutshell/" rel="canonical"/>
+<link href="../experiment-design/" rel="next"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.7" name="generator"/>
+<title>index.md - CORDEX Guidance</title>
+<link href="../assets/stylesheets/main.ec1eaa64.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../assets/stylesheets/custom.css" rel="stylesheet"/>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="amber" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#cordex-in-a-nutshell">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="CORDEX Guidance" class="md-header__button md-logo" data-md-component="logo" href=".." title="CORDEX Guidance">
+<img alt="logo" src="../assets/images/CORDEX_RGB_logo_negative.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            CORDEX Guidance
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              index.md
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="amber" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="amber" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/WCRP-CORDEX/cordex-guidance" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    WCRP-CORDEX/cordex-guidance
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="CORDEX Guidance" class="md-nav__button md-logo" data-md-component="logo" href=".." title="CORDEX Guidance">
+<img alt="logo" src="../assets/images/CORDEX_RGB_logo_negative.png"/>
+</a>
+    CORDEX Guidance
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/WCRP-CORDEX/cordex-guidance" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    WCRP-CORDEX/cordex-guidance
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    CORDEX in a nutshell
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    
+  
+    CORDEX in a nutshell
+  
+
+    
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#before-the-experiment">
+<span class="md-ellipsis">
+      
+        Before the experiment
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#design-of-the-experiment">
+<span class="md-ellipsis">
+      
+        Design of the experiment
+      
+    </span>
+</a>
+<nav aria-label="Design of the experiment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cordex-domain">
+<span class="md-ellipsis">
+      
+        CORDEX domain
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-sharing">
+<span class="md-ellipsis">
+      
+        Data-sharing
+      
+    </span>
+</a>
+<nav aria-label="Data-sharing" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-request">
+<span class="md-ellipsis">
+      
+        Data request
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#standardization">
+<span class="md-ellipsis">
+      
+        Standardization
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#esgf">
+<span class="md-ellipsis">
+      
+        ESGF
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../experiment-design/">
+<span class="md-ellipsis">
+    
+  
+    Experiment design
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../archive-specifications/">
+<span class="md-ellipsis">
+    
+  
+    Archiving specifications
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../data-request/">
+<span class="md-ellipsis">
+    
+  
+    Data request
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../simulation-status/">
+<span class="md-ellipsis">
+    
+  
+    Simulation status
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CORDEX-CMIP6-citation/">
+<span class="md-ellipsis">
+    
+  
+    CORDEX data citation service
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#before-the-experiment">
+<span class="md-ellipsis">
+      
+        Before the experiment
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#design-of-the-experiment">
+<span class="md-ellipsis">
+      
+        Design of the experiment
+      
+    </span>
+</a>
+<nav aria-label="Design of the experiment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cordex-domain">
+<span class="md-ellipsis">
+      
+        CORDEX domain
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-sharing">
+<span class="md-ellipsis">
+      
+        Data-sharing
+      
+    </span>
+</a>
+<nav aria-label="Data-sharing" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-request">
+<span class="md-ellipsis">
+      
+        Data request
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#standardization">
+<span class="md-ellipsis">
+      
+        Standardization
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#esgf">
+<span class="md-ellipsis">
+      
+        ESGF
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="cordex-in-a-nutshell">CORDEX in a nutshell<a class="headerlink" href="#cordex-in-a-nutshell" title="Permanent link">¶</a></h1>
+<div class="admonition danger">
+<p class="admonition-title">This page in under construction</p>
+</div>
+<p>This page introduces the main steps and resources for institutions planning to contribute simulations to CORDEX.</p>
+<p>CORDEX is a community framework for coordinating regional climate downscaling across research groups and regions.
+Its shared protocols help make simulations comparable and their data easier to discover, access, and use in climate research, impact studies, and decision-making.</p>
+<p>A CORDEX contribution generally involves three steps:</p>
+<ol>
+<li>Run a downscaling simulation for a CORDEX domain, following the relevant experiment protocol.</li>
+<li>Prepare and archive the output according to the applicable data and metadata standards.</li>
+<li>Make the data available to the community, typically through the Earth System Grid Federation (ESGF).</li>
+</ol>
+<p>CORDEX provides protocols and guidance for the different parts of this process, from experiment design to data publication.
+This site brings those resources together and points to their current versions for both new and experienced contributors.</p>
+<p>CORDEX data are published through the <em>Earth System Grid Federation</em> (<a href="https://www.climateurope.eu/esgf-earth-system-grid-federation/">ESGF</a>), a distributed system for publishing and discovering climate data.
+To make datasets interoperable and searchable, contributors follow the conventions and metadata requirements specified for the relevant CORDEX activity and experiment.</p>
+<h2 id="before-the-experiment">Before the experiment<a class="headerlink" href="#before-the-experiment" title="Permanent link">¶</a></h2>
+<p>CORDEX's <em>Science Advisory Team</em> (<a href="https://cordex.org/about/science-adv-team/">SAT</a>) provides scientific guidance and develops experiment protocols with the community.
+CORDEX is organized around regional domains, each linking a defined geographic area with a community of researchers and institutions working in that region.
+<em>Points of Contact</em> (<a href="https://cordex.org/about/points-of-contact/">POCs</a>) connect these regional communities with CORDEX-wide activities.
+Before starting a contribution, contact the relevant POC to discuss regional priorities, ongoing activities, and how your work can align with them.</p>
+<h2 id="design-of-the-experiment">Design of the experiment<a class="headerlink" href="#design-of-the-experiment" title="Permanent link">¶</a></h2>
+<p>CORDEX accommodates different methods for downscaling climate information.
+The two broad categories are:</p>
+<ul>
+<li><em>Regional climate models (RCMs)</em>: numerical models that represent physical processes and relationships among climate variables.</li>
+<li><em>Empirical-statistical downscaling (ESD)</em>: methods that use statistical relationships between large-scale climate information and local or regional climate variables.</li>
+</ul>
+<p>Downscaling is performed for a defined CORDEX domain and period, using a specified source of <strong>forcing data</strong> (the large-scale climate information used to drive or inform the downscaling method).
+Depending on the experiment protocol, contributions commonly include simulations of the following types:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Simulation</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: center;">Forcing (example)</th>
+<th style="text-align: center;">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Evaluation</td>
+<td style="text-align: left;">Simulation used to assess model performance, commonly driven by reanalysis data</td>
+<td style="text-align: center;">Reanalysis</td>
+<td style="text-align: center;">Historical or present-day climate</td>
+</tr>
+<tr>
+<td style="text-align: center;">Historical</td>
+<td style="text-align: left;">Simulation driven by a global climate model (GCM) simulation of past climate</td>
+<td style="text-align: center;">CMIP historical experiment</td>
+<td style="text-align: center;">Historical climate</td>
+</tr>
+<tr>
+<td style="text-align: center;">Future</td>
+<td style="text-align: left;">Simulation driven by a GCM projection under a specified future scenario</td>
+<td style="text-align: center;">CMIP scenario experiment</td>
+<td style="text-align: center;">Future climate</td>
+</tr>
+</tbody>
+</table>
+<p>The SAT develops experiment protocols in consultation with the CORDEX community.
+Protocols evolve as climate science and the <em>Coupled Model Intercomparison Project</em> (<a href="https://www.wcrp-cmip.org/">CMIP</a>) advance, so the applicable requirements depend on the CORDEX activity and protocol you are contributing to.
+Available protocol versions include:</p>
+<ul>
+<li>CORDEX-CMIP5 protocols: <a href="https://cordex.org/experiment-guidelines/cordex-cmip5/experiment-protocol-cordex-cmip5-rcms/">RCMs</a> and <a href="https://cordex.org/experiment-guidelines/cordex-cmip5/experiment-protocol-cordex-cmip5-esd/">ESD</a>.</li>
+<li>CORDEX-CMIP6 protocol for RCMs: <a href="https://zenodo.org/records/15268192">protocol</a>.</li>
+<li>CORDEX-CMIP7-AFT protocol: under development.</li>
+<li>CORDEX-CMIP7 protocol: under development.</li>
+</ul>
+<p>The protocols do not prescribe every detail of model configuration for each domain, so discuss regional setup choices with the relevant POC.
+Before committing to long simulations, test the configuration selected for your model and domain, including its sensitivity to key choices where practical.
+A community task is developing a skill-based assessment of GCMs for each CORDEX domain, based on how well they represent key regional climate features (<a href="url">task</a>).
+The CORDEX-CMIP7 activity is planned in two phases: an initial phase using the first available CMIP7 forcing data through CMIP7-AFT, followed by a phase using standard CMIP7 data.
+The CMIP7-AFT data are intended to support preparation for the IPCC Seventh Assessment Report (AR7).</p>
+<h3 id="cordex-domain">CORDEX domain<a class="headerlink" href="#cordex-domain" title="Permanent link">¶</a></h3>
+<p>A CORDEX <a href="https://cordex.org/domains/cordex-domain-description/">domain</a> is both a defined geographic area for regional climate simulations and a community of researchers and institutions working in that region.
+As a key organizational structure within CORDEX, each domain provides a focus for regional collaboration, discussion of priorities, and coordination of contributions.
+The domain description sets out its geographic boundaries, while the relevant experiment protocol and data requirements specify the spatial coverage expected for simulations.</p>
+<h2 id="data-sharing">Data-sharing<a class="headerlink" href="#data-sharing" title="Permanent link">¶</a></h2>
+<p>Sharing data among CORDEX participants is central to the initiative.
+To support this, CORDEX specifies which variables to provide and how datasets should be formatted and described.</p>
+<h3 id="data-request">Data request<a class="headerlink" href="#data-request" title="Permanent link">¶</a></h3>
+<p>A <em>Data Request</em> lists the variables that contributors are asked to provide for an experiment.
+Variables are assigned priorities, such as Core, Tier 1, and Tier 2, which indicate the expected contribution level.
+The request also specifies details such as the required temporal frequency for each variable.
+This helps make the data useful to a wide range of users while keeping production demands manageable for contributing institutions.
+Data requests depend on the experiment; see the <a href="https://wcrp-cordex.github.io/data-request-table/dreq_default.html">CORDEX-CMIP6 Data Request</a> for an example.</p>
+<h3 id="standardization">Standardization<a class="headerlink" href="#standardization" title="Permanent link">¶</a></h3>
+<p>CORDEX data must follow common formatting and metadata rules so datasets from different institutions, models, and domains can be used together.
+These rules build on standards such as the <a href="https://cfconventions.org/">CF Conventions</a> and are described in the relevant <a href="url">output protocol</a>.
+Preparing model output to meet a protocol's variable, metadata, and file-format requirements is commonly called <em>CMORization</em>.</p>
+<h3 id="esgf">ESGF<a class="headerlink" href="#esgf" title="Permanent link">¶</a></h3>
+<p>Publishing through ESGF also requires datasets to use the identifiers and metadata expected by the relevant CORDEX activity.
+These include a <em>Data Reference Syntax</em> (DRS), which defines how datasets are organized and named, and <em>Controlled Vocabularies</em> (CVs), which provide approved identifiers for items such as institutions, models, and experiments.
+ESGF uses this metadata to index datasets and help users find available data.</p>
+<p>The CORDEX vocabularies and related publication metadata are maintained in community repositories by designated maintainers.
+The directory and filename patterns below illustrate the CORDEX-CMIP5 DRS; use the current protocol and controlled vocabularies for the activity you are contributing to.</p>
+<p>In this CMIP5 example, the directory structure is:
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>&lt;activity&gt;/
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>  &lt;product&gt;/
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>    &lt;Domain&gt;/
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>      &lt;Institution&gt;/
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>        &lt;GCMModelName&gt;/
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a>          &lt;CMIP5ExperimentName&gt;/
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a>            &lt;CMIP5EnsembleMember&gt;/
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a>              &lt;RCMModelName&gt;/
+<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a>                &lt;RCMVersionID&gt;/
+<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a>                  &lt;Frequency&gt;/
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a>                    &lt;VariableName&gt;
+</code></pre></div>
+<p>In this CMIP5 example, the filename combines DRS elements in the following order:
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>&lt;VariableName&gt;_&lt;Domain&gt;_&lt;GCMModelName&gt;_&lt;CMIP5ExperimentName&gt;_&lt;CMIP5EnsembleMember&gt;_&lt;RCMModelName&gt;_&lt;RCMVersionID&gt;_&lt;Frequency&gt;[_&lt;StartTime&gt;-&lt;EndTime&gt;].nc
+</code></pre></div>
+<p>The values for each element come from the experiment definition, the relevant controlled vocabularies, or the simulation output.
+A full description is available in the <a href="url">output specifications</a>.</p>
+<ul>
+<li><code>&lt;activity&gt;</code>: the CORDEX activity, such as <code>DYN</code> for dynamical downscaling or <code>ESD</code> for empirical-statistical downscaling.</li>
+<li><code>&lt;product&gt;</code>: the product category defined by the relevant activity's DRS.</li>
+<li><code>&lt;Domain&gt;</code>: the identifier of a declared CORDEX domain from the <a href="url">domain vocabulary</a>.</li>
+<li><code>&lt;Institution&gt;</code>: the identifier of a registered institution from the <a href="url">institution vocabulary</a>; contact your POC if your institution is not listed.</li>
+<li><code>&lt;GCMModelName&gt;</code>: the name of the CMIP GCM providing the forcing, selected from the <a href="url">GCM vocabulary</a>.</li>
+<li><code>&lt;CMIP5ExperimentName&gt;</code>: the name of the CMIP5 experiment providing the forcing, selected from the <a href="url">experiment vocabulary</a>.</li>
+<li><code>&lt;CMIP5EnsembleMember&gt;</code>: the identifier of the GCM ensemble member, selected from the <a href="url">GCM ensemble vocabulary</a>.</li>
+<li><code>&lt;RCMModelName&gt;</code>: the name of the regional climate model, selected from the <a href="url">RCM vocabulary</a>; contact your POC if your model is not listed.</li>
+<li><code>&lt;RCMVersionID&gt;</code>: the registered version of the regional climate model, selected from the <a href="url">RCM version vocabulary</a>; contact your POC if your model version is not listed.</li>
+<li><code>&lt;Frequency&gt;</code>: the output frequency, selected from the <a href="url">frequency vocabulary</a>.</li>
+<li><code>&lt;VariableName&gt;</code>: the variable identifier, selected from the <a href="url">variable vocabulary</a>.</li>
+<li><code>[_&lt;StartTime&gt;-&lt;EndTime&gt;]</code>: an optional date range indicating the period covered by the file.</li>
+</ul>
+<h4 id="checking-before-uploading">Checking before uploading<a class="headerlink" href="#checking-before-uploading" title="Permanent link">¶</a></h4>
+<p>Before publication, run the checks required by the applicable protocol.
+For example, the following tools support preparation and validation of CORDEX data:</p>
+<ul>
+<li><a href="https://github.com/WCRP-CORDEX/ncrepack-cordex">ncrepack-cordex</a>: repacks NetCDF files to facilitate downloading and analysis.</li>
+<li><a href="https://github.com/ESGF/esgf-qa">esgf-qa</a>: checks data against ESGF quality-assurance requirements.</li>
+</ul>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.footnote.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+<script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+</body>
+</html>
