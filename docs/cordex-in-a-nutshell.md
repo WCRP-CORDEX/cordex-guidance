@@ -61,6 +61,8 @@ In consultancy with the entire community, SAT provides an experiment protocol to
 
 Fine scale details in how to configure modeling tools over an specific CORDEX domain are not imposed, but a coordination with the respective POC is recommended. 
 Also is recommended to perform some sensitivity tests of the _most suited_ configuration of the model at the given domain before performing the long simulations.
+A task is being carried out ([task](url)) in order to provide a skill-based list of GCMs for each CORDEX domain based in their representation of key reginoal climate features.
+It is planned to have 2-phase CORDEX CMIP7 exercise, one based in the first available CMIP7 GCMs provided as CMIP7-AFT (to be published for the IPCC AR7), and later on as standard CMIP7.
 
 ### Modeling tool
 CORDEX aims to accommodate any numerical tool or methodology designed to provide a scientifically-based numerical representation of the climate system. 
