@@ -92,11 +92,7 @@ Preparing climate model output to meet a project's variable, metadata, and file-
 Publishing through ESGF requires datasets to use the standards explained above, which is tested with a metadata compliance checker prior to publication, more on that below.
 
 !!! info "Useful links"
-    For CORDEX-CMIP6:
-    - [Archive specifications](https://wcrp-cordex.github.io/archive-specifications/CORDEX-CMIP6_archiving_specifications_DD/)
-    - [Controlled vocabularies](https://github.com/WCRP-CORDEX/cordex-cmip6-cv)
-    - [CMOR Tables in JSON format](https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables)
-    - [An interactive view of the registered vocabularies](https://esgvoc.ipsl.fr/?projects=cordex-cmip6)
+    For CORDEX-CMIP6: [Archive specifications](https://wcrp-cordex.github.io/archive-specifications/CORDEX-CMIP6_archiving_specifications_DD/) - [Controlled vocabularies](https://github.com/WCRP-CORDEX/cordex-cmip6-cv) - [CMOR Tables in JSON format](https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables) - [An interactive view of the registered vocabularies](https://esgvoc.ipsl.fr/?projects=cordex-cmip6)
 
 #### Example
 The directory and filename patterns below illustrate the CORDEX-CMIP6 DRS; use the proper protocol and controlled vocabularies for the activity and project you are contributing to.
@@ -147,5 +143,5 @@ For example, the following tools support preparation and validation of CORDEX da
 - [esgf-qa](https://github.com/ESGF/esgf-qa): checks data against ESGF quality-assurance requirements.
 
 #### Uploading
-Uploading CORDEX-CMIP6 data to the ESGF follows the same steps as for CMIP7, and is described here : https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_ESGF/.
+Uploading CORDEX-CMIP6 data to the ESGF follows the same steps as for CMIP7, and is described [on this page](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_ESGF/).
 The only difference in the process is specifying `CORDEX-CMIP6` as the project name instead of `CMIP7` were applicable.
