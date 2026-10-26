@@ -3,7 +3,7 @@ title: index.md
 summary: central guidance to contribute to CORDEX
 authors:
     - Lluis Fita
-    - CORDEX TTPI 
+    - CORDEX TTPI
 date: 2026-09-30
 some_url: https://wcrp-cordex.github.io/cordex-guidance/
 ---
@@ -83,52 +83,61 @@ Data requests depend on the experiment; see the [CORDEX-CMIP6 Data Request](http
  
 ### Standardization
 CORDEX data must follow common formatting and metadata rules so datasets from different institutions, models, and domains can be used together.
-These rules build on standards such as the [CF Conventions](https://cfconventions.org/) and are described in the relevant [output protocol](url).
-Preparing model output to meet a protocol's variable, metadata, and file-format requirements is commonly called _CMORization_.
+These rules build on standards such as the [CF Conventions](https://cfconventions.org/) and are described in the relevant archive specifications.
+Those include a _Data Reference Syntax_ (DRS), which defines how datasets (files) are organized and named, and _Controlled Vocabularies_ (CVs), which provide approved identifiers for items such as institutions, models, and experiments.
+In many cases, modellers wanting to share data under a CORDEX projet must first _register_ the identifiers of their insitution and model in the appropriate repository.
 
-### ESGF
-Publishing through ESGF also requires datasets to use the identifiers and metadata expected by the relevant CORDEX activity.
-These include a _Data Reference Syntax_ (DRS), which defines how datasets are organized and named, and _Controlled Vocabularies_ (CVs), which provide approved identifiers for items such as institutions, models, and experiments.
-ESGF uses this metadata to index datasets and help users find available data.
+ESGF uses this metadata to index datasets and help users find available data. 
+Preparing climate model output to meet a project's variable, metadata, and file-format requirements is commonly called _CMORization_ because it is often done with the [`cmor` tool](https://cmor.llnl.gov/).
+Publishing through ESGF requires datasets to use the standards explained above, which is tested with a metadata compliance checker prior to publication, more on that below.
 
-The CORDEX vocabularies and related publication metadata are maintained in community repositories by designated maintainers.
-The directory and filename patterns below illustrate the CORDEX-CMIP5 DRS; use the current protocol and controlled vocabularies for the activity you are contributing to.
+!!! info "Useful links"
+    For CORDEX-CMIP6:
+    - [Archive specifications](https://wcrp-cordex.github.io/archive-specifications/CORDEX-CMIP6_archiving_specifications_DD/)
+    - [Controlled vocabularies](https://github.com/WCRP-CORDEX/cordex-cmip6-cv)
+    - [CMOR Tables in JSON format](https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables)
+    - [An interactive view of the registered vocabularies](https://esgvoc.ipsl.fr/?projects=cordex-cmip6)
 
-In this CMIP5 example, the directory structure is:
+#### Example
+The directory and filename patterns below illustrate the CORDEX-CMIP6 DRS; use the proper protocol and controlled vocabularies for the activity and project you are contributing to.
+
+Directory structure is:
 ```
-<activity>/
-  <product>/
-    <Domain>/
-      <Institution>/
-        <GCMModelName>/
-          <CMIP5ExperimentName>/
-            <CMIP5EnsembleMember>/
-              <RCMModelName>/
-                <RCMVersionID>/
-                  <Frequency>/
-                    <VariableName>
+<project_id>
+  <activity_id>/
+    <domain_id>/
+      <institution_id>/
+        <driving_source_id>/
+          <driving_experiment_id>/
+            <driving_variant_label>/
+              <source_id>/ 
+                <version_realization>/
+                  <frequency>/
+                    <variable_id>/
+                      <version>/
 ```
 
-In this CMIP5 example, the filename combines DRS elements in the following order:
+In this CORDEX-CMIP6 example, the filename combines DRS elements in the following order:
 ```
-<VariableName>_<Domain>_<GCMModelName>_<CMIP5ExperimentName>_<CMIP5EnsembleMember>_<RCMModelName>_<RCMVersionID>_<Frequency>[_<StartTime>-<EndTime>].nc
+<variable_id>_<domain_id>_<driving_source_id>_<driving_experiment_id>_<driving_variant_label>_<institution_id>_<source_id>_<version_realization>_<frequency>_[<start_time>-<end_time>].nc"
 ```
 
 The values for each element come from the experiment definition, the relevant controlled vocabularies, or the simulation output.
-A full description is available in the [output specifications](url).
+A full description is available in the [archive specifications](https://wcrp-cordex.github.io/archive-specifications/CORDEX-CMIP6_archiving_specifications_DD/#4-esgf-directory-structure). Given links are valid for CORDEX-CMIP6.
 
-- `<activity>`: the CORDEX activity, such as `DYN` for dynamical downscaling or `ESD` for empirical-statistical downscaling.
-- `<product>`: the product category defined by the relevant activity's DRS.
-- `<Domain>`: the identifier of a declared CORDEX domain from the [domain vocabulary](url).
-- `<Institution>`: the identifier of a registered institution from the [institution vocabulary](url); contact your POC if your institution is not listed.
-- `<GCMModelName>`: the name of the CMIP GCM providing the forcing, selected from the [GCM vocabulary](url).
-- `<CMIP5ExperimentName>`: the name of the CMIP5 experiment providing the forcing, selected from the [experiment vocabulary](url).
-- `<CMIP5EnsembleMember>`: the identifier of the GCM ensemble member, selected from the [GCM ensemble vocabulary](url).
-- `<RCMModelName>`: the name of the regional climate model, selected from the [RCM vocabulary](url); contact your POC if your model is not listed.
-- `<RCMVersionID>`: the registered version of the regional climate model, selected from the [RCM version vocabulary](url); contact your POC if your model version is not listed.
-- `<Frequency>`: the output frequency, selected from the [frequency vocabulary](url).
-- `<VariableName>`: the variable identifier, selected from the [variable vocabulary](url).
-- `[_<StartTime>-<EndTime>]`: an optional date range indicating the period covered by the file.
+- `<project_id>`: "CORDEX-CMIP6", the name of the project inside ESGF.
+- `<activity_id>`: the CORDEX activity, such as `DD` for dynamical downscaling or `CPM` for convection-permitting modelling.
+- `<domain_id>`: the identifier of a declared CORDEX domain from the [domain tables](https://github.com/WCRP-CORDEX/domain-tables/).
+- `<institution_id>`: the identifier of a registered institution from the [institution vocabulary](https://github.com/WCRP-CORDEX/cordex-cmip6-cv/blob/main/CORDEX-CMIP6_institution_id.json); contact your POC if your institution is not listed.
+- `<driving_source_id>`: the identifier of the GCM providing the forcing, selected from the [GCM vocabulary](https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_source_id.html).
+- `<driving_experiment_id>`: the identifier of the CMIP experiment providing the forcing, selected from the [experiment vocabulary](https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_experiment_id.html).
+- `<driving_variant_label>`: the identifier of the GCM ensemble member, following CMIP syntax (`r?i?p?f?` for CMIP6).
+- `<source_id>`: the identifier of the regional climate model, selected from the [RCM vocabulary](https://github.com/WCRP-CORDEX/cordex-cmip6-cv/blob/main/CORDEX-CMIP6_source_id.json); contact your POC if your model is not listed.
+- `<version_realization>`: the identifier of the RCM ensemble member or simulation version. Following the `v?-r?` syntax.
+- `<frequency>`: the output frequency, selected from the [frequency vocabulary](https://github.com/WCRP-CORDEX/cordex-cmip6-cv/blob/main/CORDEX-CMIP6_frequency.json).
+- `<variable_id>`: the variable identifier, selected from the data request (see above).
+- `<version>` : the date of creation of this published dataset. This only appears in the directory structure, not in the metadata. Usually, users should simply select the latest version.
+- `<start_time>-<end_time>`: a date range indicating the period covered by the file (absent for fixed fields).
 
 #### Checking before uploading
 Before publication, run the checks required by the applicable protocol.
@@ -137,3 +146,6 @@ For example, the following tools support preparation and validation of CORDEX da
 - [ncrepack-cordex](https://github.com/WCRP-CORDEX/ncrepack-cordex): repacks NetCDF files to facilitate downloading and analysis.
 - [esgf-qa](https://github.com/ESGF/esgf-qa): checks data against ESGF quality-assurance requirements.
 
+#### Uploading
+Uploading CORDEX-CMIP6 data to the ESGF follows the same steps as for CMIP7, and is described here : https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_ESGF/.
+The only difference in the process is specifying `CORDEX-CMIP6` as the project name instead of `CMIP7` were applicable.
