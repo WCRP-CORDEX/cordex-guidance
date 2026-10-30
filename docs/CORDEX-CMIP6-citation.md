@@ -1,7 +1,5 @@
 # CORDEX data citation service
 
-!!! danger "This page in under construction"
-
 CORDEX data citations will be created automatically in response to data publication on ESGF.
 Data citations can be explored at [https://cmip7-citations.ceda.ac.uk](https://cmip7-citations.ceda.ac.uk) and detailed guidance is provided at [https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Citation_Guidance](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Citation_Guidance/).
 This document only provides CORDEX-specific instructions for the modelling teams.
@@ -79,11 +77,15 @@ A list of institutions contributing to CORDEX is available [here](https://wcrp-c
 
 This record was created via the CEDA Citation Service, maintained and hosted on the CEDA JASMIN Infrastructure.
 ```
+This abstract should be descriptive while staying relatively short. You can put any links (using markdown syntax) to external sources of information when they don't have a DOI. For sources with a DOI, using references should be preferred.
 
 ## References
 
 The References tab is intended for key publications further describing your model or model components, or showing their usage for various results.
 References can be updated after the DOI has been minted, so there is no need to create a new version of the citation entry to include a new reference.
+We recommend adding all references cited in the abstract (see template above for example). 
+
+In the Record edititing page of the service, you can enable "Replicate Citation Records" to apply the modifications to multiple entries. However, only the Contacts, Institutions, Funding sources and References will be replicated. The abstract needs to be manually replicated for each record.
 
 ## Resources
 
